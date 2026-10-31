@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gizlilik Politikası — Ev Fırsat Bulucu</title>
+<title>Gizlilik Politikası ve Aydınlatma Metni — Fırsat Bul</title>
 <style>
   :root { color-scheme: light dark; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -12,58 +12,85 @@
   h2 { font-size: 19px; margin-top: 32px; }
   .muted { color: #888; font-size: 14px; }
   ul { padding-left: 20px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid rgba(128,128,128,0.3); }
+  .scroll { overflow-x: auto; }
   code { background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 4px; }
 </style>
 </head>
 <body>
-  <h1>Gizlilik Politikası</h1>
-  <p class="muted">Ev Fırsat Bulucu · Son güncelleme: 18 Ağustos 2026</p>
+  <h1>Gizlilik Politikası ve Aydınlatma Metni</h1>
+  <p class="muted">Fırsat Bul (Ev Fırsat Bulucu) · Son güncelleme: 31 Ekim 2026</p>
 
-  <p>Bu politika, <strong>Ev Fırsat Bulucu</strong> uygulamasının (“Uygulama”) hangi
-  verileri işlediğini açıklar. Uygulama, Türkiye emlak piyasasında yatırım ve
-  konut fırsatlarını analiz etmenize yardımcı olan bir araçtır.</p>
+  <p>Bu metin, <strong>Fırsat Bul</strong> uygulamasının (“Uygulama”) hangi kişisel verileri, hangi amaçla
+  işlediğini, kimlere aktardığını, ne kadar sakladığını ve haklarını nasıl kullanabileceğini açıklar.</p>
 
-  <h2>Topladığımız Veriler</h2>
+  <h2 id="sorumlu">Veri sorumlusu ve iletişim</h2>
+  <p>Veri sorumlusu, Uygulamanın App Store ve Google Play'deki geliştiricisidir. Her türlü soru ve başvuru için:
+  <code>dortkolfatihselim@gmail.com</code></p>
+
+  <h2 id="veriler">İşlenen veriler ve amaçları</h2>
+  <div class="scroll"><table>
+    <tr><th>Veri</th><th>Amaç</th></tr>
+    <tr><td>Hesap: e-posta adresi, varsa ad, kullanıcı kimliği (e-posta, Apple ile Giriş veya Google ile Giriş)</td>
+        <td>Hesap oluşturma, giriş, kayıtlarını hesabına bağlama</td></tr>
+    <tr><td>Tercihler: hedef, şehir, ilçeler, bütçe, fırsat eşiği</td><td>Sana uygun ilanları ve fırsatları gösterme</td></tr>
+    <tr><td>Uygulama içi kayıtlar: kaydedilen raporlar, fırsat alarmları</td><td>Kaydettiklerini saklama, alarm eşleşmesinde bildirim</td></tr>
+    <tr><td>Uzman görüşü talebi: kategori, ilan, uygun zaman, iletişim kanalın (telefon veya e-posta), sorun</td>
+        <td>Talebini yanıtlama</td></tr>
+    <tr><td>Yapay zekâ asistanına yazdığın mesajlar ve sorduğun ilanın bilgileri (yalnızca izin verdiysen)</td>
+        <td>Yanıt üretme. Mesajlar veritabanımızda saklanmaz; adın, e-postan ve iletişim bilgin gönderilmez.</td></tr>
+    <tr><td>Günlük kullanım sayaçları (analiz, AI isteği ve tarama sayısı; içerik değil)</td><td>Günlük kullanım haklarını uygulama</td></tr>
+    <tr><td>Bildirim belirteci ve dil</td><td>Fırsat alarmı ve fiyat düşüşü bildirimi gönderme</td></tr>
+    <tr><td>Abonelik durumu (kullanıcı kimliğinle eşleşen satın alma kaydı)</td><td>Pro üyeliği doğrulama. Kart bilgisine erişmeyiz.</td></tr>
+  </table></div>
+  <p>Face ID / Touch ID ve parmak izi doğrulaması tamamen cihazında, işletim sistemi tarafından yapılır; biyometrik
+  veriye erişmeyiz. Giriş yapmadan kullandığında tercihler, randevular ve kayıtlar yalnızca cihazında kalır.</p>
+  <p>Uygulamadaki ilanlar kamuya açık ilan sitelerinden derlenen piyasa verileridir. İlan sahiplerinin adı, telefonu,
+  fotoğrafı ve giriş/kayıt tarihleri saklanmaz ve gösterilmez; mağaza veya emlak ofisi gibi işletme adları kalır.</p>
+  <p>Pazarlama amaçlı e-posta, SMS veya bildirim göndermeyiz; Uygulama yalnızca hesap doğrulama e-postası gönderir.</p>
+
+  <h2 id="aktarim">Aktarılan hizmet sağlayıcılar ve yurt dışına aktarım</h2>
+  <p>Verilerini reklam amacıyla satmayız veya paylaşmayız. Aşağıdaki hizmet sağlayıcıların sunucuları Türkiye
+  dışındadır; veriler bu hizmetlerin çalışması için yalnızca gerektiği kadar aktarılır:</p>
   <ul>
-    <li><strong>Hesap bilgileri:</strong> Apple ile Giriş veya e-posta ile kayıt
-      olduğunuzda, kimlik doğrulama sağlayıcımız (Supabase) üzerinden e-posta
-      adresiniz ve bir kullanıcı kimliği saklanır. Apple ile Giriş'te Apple,
-      isteğe bağlı olarak gizli bir e-posta yönlendirme adresi sağlayabilir.</li>
-    <li><strong>Tercihleriniz:</strong> Yatırım/oturum hedefiniz, takip ettiğiniz
-      bölgeler ve bütçe aralığınız cihazınızda ve (giriş yaptıysanız)
-      hesabınızda saklanır.</li>
-    <li><strong>Uygulama içi kayıtlar:</strong> Kaydettiğiniz raporlar, fırsat
-      alarmları ve uzman randevuları hesabınıza bağlı olarak saklanır.</li>
-    <li><strong>Satın alma durumu:</strong> Abonelik satın alma ve durumunuz,
-      ödeme altyapımız (RevenueCat + Apple) üzerinden yönetilir. Kredi kartı
-      bilgilerinize erişmeyiz; ödemeler Apple tarafından işlenir.</li>
+    <li><strong>Supabase</strong> — veritabanı, kimlik doğrulama ve sunucu fonksiyonları (yukarıdaki tüm hesap verileri).</li>
+    <li><strong>RevenueCat</strong> — abonelik doğrulama (kullanıcı kimliği ve satın alma kaydı).</li>
+    <li><strong>OpenAI veya Anthropic</strong> — yalnızca izin verdiysen, AI asistanı mesajları.</li>
+    <li><strong>Apple</strong> — Apple ile Giriş, App Store satın alma ve iPhone bildirimleri.</li>
+    <li><strong>Google</strong> — Google ile Giriş ve Google Play satın alma.</li>
+    <li><strong>Expo (EAS Update)</strong> — Uygulama güncellemeleri buradan indirilir; bu istekte cihazın IP adresi ve
+      uygulama sürümü iletilir.</li>
   </ul>
+  <p>İlan verilerini toplamak için kullanılan servisler (ör. Apify) senin verini almaz.</p>
 
-  <h2>Yapay Zeka Asistanı</h2>
-  <p>AI yatırım asistanı, müzakere asistanı veya ev avcısı özelliklerini
-  kullandığınızda, yazdığınız mesajlar yanıt üretmek üzere yapay zeka sağlayıcımıza
-  (OpenAI) sunucumuz aracılığıyla iletilir. Lütfen bu alanlara hassas kişisel
-  bilgiler girmeyin.</p>
+  <h2 id="saklama">Saklama süreleri</h2>
+  <ul>
+    <li>Uzman görüşü talepleri: oluşturulduktan 6 ay sonra otomatik silinir.</li>
+    <li>Radar bildirimleri ve günlük kullanım sayaçları: 90 gün sonra otomatik silinir.</li>
+    <li>Bildirim belirteçleri: 12 ay boyunca yenilenmezse otomatik silinir.</li>
+    <li>Hesap, tercihler, raporlar ve alarmlar: hesabını silene kadar saklanır.</li>
+  </ul>
+  <p>Hesabım › Hesabı Sil adımı hesabını ve ona bağlı tüm kayıtları kalıcı olarak siler; Apple ile girdiysen Apple'daki
+  uygulama yetkisinin geri alınması da Apple'a iletilir. Aboneliğin varsa mağaza ayarlarından ayrıca iptal etmen gerekir.</p>
 
-  <h2>Face ID / Biyometrik</h2>
-  <p>Uygulamaya hızlı giriş için Face ID/Touch ID'yi etkinleştirebilirsiniz.
-  Biyometrik doğrulama tamamen cihazınızda, Apple tarafından yapılır; biyometrik
-  verilerinize erişmeyiz ve saklamayız.</p>
+  <h2 id="guvenlik">Güvenlik</h2>
+  <p>Bağlantılar şifrelidir (HTTPS). Veritabanında her kullanıcı yalnızca kendi kayıtlarına erişebilir (satır düzeyi
+  güvenlik). Hizmet anahtarları yalnızca sunucuda tutulur, uygulamada bulunmaz.</p>
 
-  <h2>İlan Verileri</h2>
-  <p>Uygulamada gösterilen emlak ilanları kamuya açık kaynaklardan derlenen
-  piyasa verileridir ve kişisel verileriniz değildir.</p>
+  <h2 id="haklar">Hakların ve başvuru yolu</h2>
+  <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesi uyarınca; kişisel verilerinin işlenip işlenmediğini
+  öğrenme, işlenmişse bilgi talep etme, işleme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde
+  veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini veya yok
+  edilmesini isteme, bu işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle
+  analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğraman
+  hâlinde zararın giderilmesini talep etme haklarına sahipsin.</p>
+  <p>Başvurunu, hesabına kayıtlı e-posta adresinden <code>dortkolfatihselim@gmail.com</code> adresine yazarak
+  yapabilirsin. Başvurunu en geç 30 gün içinde yanıtlarız.</p>
 
-  <h2>Verilerin Paylaşımı</h2>
-  <p>Verilerinizi reklam amacıyla satmayız. Yalnızca uygulamanın çalışması için
-  gerekli hizmet sağlayıcılarla (kimlik doğrulama, veritabanı, ödeme, yapay zeka)
-  paylaşırız.</p>
+  <h2 id="degisiklik">Değişiklikler</h2>
+  <p>Bu metin değişirse güncel hâli bu sayfada, yeni tarihle yayımlanır.</p>
 
-  <h2>Verilerin Silinmesi</h2>
-  <p>Hesabınızın ve ilişkili verilerin silinmesini talep etmek için aşağıdaki
-  e-posta adresinden bize ulaşabilirsiniz.</p>
-
-  <h2>İletişim</h2>
-  <p>Sorularınız için: <code>dortkolfatihselim@gmail.com</code></p>
+  <p class="muted"><a href="terms.html">Kullanım Koşulları ve Abonelik Bilgilendirmesi</a> · <a href="support.html">Destek</a></p>
 </body>
 </html>
